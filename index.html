@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 允许手机缩放+适配屏幕 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>湖南人社</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            min-height: 100vh; /* 解除滚动限制，允许滑动翻图 */
+            background-color: #fff;
+            padding: 10px; /* 上下左右留边，避免贴屏 */
+        }
+        /* 图片容器居中，适配所有设备 */
+        .img-box {
+            width: 95%;
+            margin: 0 auto; /* 居中展示 */
+        }
+        /* 图片样式：自适应宽度+保持比例+间距 */
+        .content-img {
+            display: block;
+            width: 100%; /* 自适应容器宽度，不变形 */
+            height: auto; /* 保持图片比例 */
+            margin-bottom: 15px; /* 图片间留间距 */
+        }
+        /* 最后一张图片去掉底部间距 */
+        .content-img:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-box">
+        <!-- 核心修正：补充images/路径，和仓库目录完全匹配 -->
+        <img src="images/湖南人社1.png" alt="湖南人社1" class="content-img">
+        <img src="images/湖南人社2.png" alt="湖南人社2" class="content-img">
+        <img src="images/湖南人社3.png" alt="湖南人社3" class="content-img">
+    </div>
+</body>
+</html>
